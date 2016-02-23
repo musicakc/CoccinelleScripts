@@ -1,6 +1,7 @@
 //<smpl>
 @@
-identifier a,b;
+expression a;
+identifier b;
 symbol dev,work,kobj,driver,hdac,base;
 @@
 
@@ -62,7 +63,6 @@ symbol dev,work,kobj,driver,hdac,base;
 - container_of(a, struct albkcipher_request, base)
 + albkcipher_request_cast(a)
 |
-//This should be checked
 - container_of(a->b, struct irq_chip_type, chip)
 + irq_data_get_chip_type(a)
 )
