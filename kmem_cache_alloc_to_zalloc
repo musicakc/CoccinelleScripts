@@ -1,0 +1,7 @@
+//<smpl>
+@@
+expression e,f;
+@@
+- kmem_cache_alloc(e, f |__GFP_ZERO)
++ kmem_cache_zalloc(e, f)
+// </smpl>
