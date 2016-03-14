@@ -2,6 +2,7 @@
 @@
 identifier p;
 @@
-*const
+static
++const
 struct of_device_id p[] = {...};
 //</smpl>
